@@ -1,0 +1,12 @@
+$background-color: #0d0d0d;
+
+.smooth_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background-color: $background-color;
+    div {
+        color: white;
+    }
+}

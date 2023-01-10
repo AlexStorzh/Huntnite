@@ -1,0 +1,62 @@
+$background-color: #0d0d0d;
+
+.navigation {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $background-color;
+    border-bottom: 1px solid #1c1c1c;
+    height: 70px;
+    transition: 1s;
+
+    .timer {
+        font-size: 14px;
+        display: flex;
+        margin: auto;
+        font-weight: bold;
+        gap: 20px;
+    }
+    .links {
+        font-size: 18px;
+        margin-right: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color: darken($color: white, $amount: 25);
+            transform: scale(105%);
+        }
+    }
+    .languages {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 20px;
+        cursor: pointer;
+        .ua {
+            border-bottom: 1px solid white;
+        }
+        div {
+            transition: 0.3s;
+
+            &:hover {
+                color: darken($color: white, $amount: 25);
+                transform: scale(105%);
+            }
+        }
+    }
+    img {
+        width: 200px;
+        margin-left: 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(110%);
+        }
+    }
+    div {
+        color: white;
+    }
+}
