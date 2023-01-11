@@ -2,6 +2,7 @@ $background-color: #0d0d0d;
 
 .navigation {
     position: fixed;
+    z-index: 18;
     display: flex;
     align-items: center;
     width: 100%;
@@ -58,5 +59,31 @@ $background-color: #0d0d0d;
     }
     div {
         color: white;
+    }
+}
+@media (max-width: 767px) {
+    .navigation {
+        position: fixed;
+        z-index: 18;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: $background-color;
+        border-bottom: 1px solid #1c1c1c;
+        height: 70px;
+        transition: 1s;
+    }
+}
+@media (max-width: 570px) {
+    .navigation {
+        position: fixed;
+        z-index: 18;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: $background-color;
+        border-bottom: 1px solid #1c1c1c;
+        height: 70px;
+        transition: 1s;
     }
 }

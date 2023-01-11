@@ -1,0 +1,164 @@
+.contacts {
+    padding: 50px;
+    background-color: #0d0d0d;
+    .text {
+        cursor: pointer;
+        &_upper {
+            display: inline-block;
+            position: relative;
+            margin-top: 40px;
+            color: white;
+            font-size: 80px;
+            transition: 0.3s;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+        &_bottom {
+            display: inline-block;
+            position: relative;
+            color: white;
+            font-size: 80px;
+            margin-left: 250px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom right;
+            }
+        }
+    }
+    &_info {
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        .contacts_mail {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            .contacts_using {
+                display: inline-block;
+                position: relative;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: 400px;
+                cursor: pointer;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #1c1c1c;
+                    transform-origin: bottom left;
+                    transition: transform 0.25s ease-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                &:hover {
+                    .inactiv {
+                        color: white;
+                    }
+                }
+                .inactiv {
+                    color: grey;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .contacts_info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        padding: 50px;
+        background-color: #0d0d0d;
+        .text {
+            cursor: pointer;
+            &_bottom {
+                display: inline-block;
+                position: relative;
+                color: white;
+                font-size: 40px;
+                margin-left: 0px;
+            }
+            &_upper {
+                font-size: 40px;
+            }
+        }
+    }
+    .contacts_info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .contacts {
+        padding: 0px;
+        background-color: #0d0d0d;
+        .text {
+            cursor: pointer;
+            &_bottom {
+                display: inline-block;
+                position: relative;
+                color: white;
+                font-size: 40px;
+                margin-left: 0px;
+            }
+            &_upper {
+                font-size: 40px;
+            }
+        }
+    }
+    .contacts_info {
+        flex-direction: column;
+        align-items: center;
+        .contacts_mail {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            .contacts_using {
+                display: inline-block;
+                position: relative;
+                padding: 0px;
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+            }
+        }
+    }
+}

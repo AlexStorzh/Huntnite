@@ -1,0 +1,48 @@
+.introduction {
+    color: white;
+    padding-top: 8em;
+    height: 100vh;
+    .introduction_text {
+        max-width: 300px;
+        margin: auto;
+        margin-left: 710px;
+        color: white;
+    }
+    .scroller {
+        font-size: 300px;
+        display: flex;
+        gap: 10px;
+        display: inline-block;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .introduction {
+        color: white;
+        padding-top: 8em;
+        height: 100vh;
+        .introduction_text {
+            max-width: 300px;
+            margin: auto;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .introduction {
+        color: white;
+        padding-top: 8em;
+        height: 100vh;
+        .introduction_text {
+            max-width: 300px;
+            margin: auto;
+            color: white;
+        }
+        .scroller {
+            font-size: 170px;
+            display: flex;
+            gap: 10px;
+            display: inline-block;
+        }
+    }
+}

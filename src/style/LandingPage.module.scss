@@ -6,7 +6,7 @@ $background-color: #0d0d0d;
     margin: 0;
     height: 100vh;
     background-color: $background-color;
-    div {
-        color: white;
+    ::-webkit-scrollbar {
+        display: none;
     }
 }

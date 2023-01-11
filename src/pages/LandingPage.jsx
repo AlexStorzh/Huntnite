@@ -1,6 +1,10 @@
 import React from "react";
-import Introduction from "../components/Introduction";
-import Navbar from "../components/Navbar";
+import Contacts from "../components/Contacts/Contacts";
+import Footer from "../components/Footer/Footer";
+import Info from "../components/Info/Info";
+import Introduction from "../components/Introduction/Introduction";
+import Navbar from "../components/Navbar/Navbar";
+import Process from "../components/Process/Process";
 import style from "../style/LandingPage.module.scss";
 
 const LandingPage = () => {
@@ -8,6 +12,10 @@ const LandingPage = () => {
     <div className={style.smooth_wrapper}>
       <Navbar />
       <Introduction />
+      <Info />
+      <Process />
+      <Contacts />
+      <Footer />
     </div>
   );
 };

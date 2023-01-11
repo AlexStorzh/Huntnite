@@ -1,6 +1,7 @@
 import React from "react";
-import style from "../style/Introduction.module.scss";
+import style from "./Introduction.module.scss";
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 const textAnimation = {
   hidden: {
@@ -19,9 +20,10 @@ const Introduction = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
+      viewport={{ amount: 0.2 }}
       className={style.introduction}
     >
-      <motion.div
+      <motion.p
         custom={1}
         variants={textAnimation}
         className={style.introduction_text}
@@ -30,12 +32,14 @@ const Introduction = () => {
         and organisations to find suitable employees. Employers outsource
         recruitment because it takes a lot of resources and not everyone has the
         expertise to find and recruit the best talent themselves.
-      </motion.div>
-      <div className={style.scroller}>
-        <div>HUNTNITE &bull; RECRUITMENT AGENCY</div>
+      </motion.p>
 
-        <div></div>
-      </div>
+      <Marquee speed={150} gradient={false} className={style.scroller}>
+        <div>HUNTNITE</div>
+        &bull;
+        <div>RECRUITMENT AGENCY</div>
+        &bull;
+      </Marquee>
     </motion.div>
   );
 };
