@@ -1,0 +1,52 @@
+.loader_wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background-color: #0d0d0d;
+    transition: 1s;
+    color: white;
+    .loader_inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .loading {
+        font-size: 70px;
+        animation: blink 3s infinite;
+        @keyframes blink {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.5;
+            }
+        }
+    }
+    .numbers {
+        font-size: 200px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .loader_wrapper {
+        display: flex;
+        align-items: center;
+        .numbers {
+            font-size: 140px;
+        }
+    }
+    .loading {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .loader_wrapper {
+        display: flex;
+        align-items: center;
+        .numbers {
+            font-size: 100px;
+        }
+    }
+}

@@ -85,5 +85,44 @@ $background-color: #0d0d0d;
         border-bottom: 1px solid #1c1c1c;
         height: 70px;
         transition: 1s;
+        justify-content: space-around;
+        .timer {
+            display: none;
+        }
+        img {
+            width: 150px;
+            margin-left: 40px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(100%);
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .navigation {
+        position: fixed;
+        z-index: 18;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: $background-color;
+        border-bottom: 1px solid #1c1c1c;
+        height: 70px;
+        transition: 1s;
+        justify-content: space-around;
+        .timer {
+            display: none;
+        }
+        img {
+            width: 100px;
+            margin-left: 0px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(100%);
+            }
+        }
     }
 }

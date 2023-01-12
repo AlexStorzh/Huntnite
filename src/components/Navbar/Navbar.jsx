@@ -8,18 +8,30 @@ const Navbar = () => {
   useEffect(() => {
     setInterval(() => setData(new Date()), 1000);
   }, []);
+  let scrollToBot = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+  let scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className={style.navigation}>
-      <img src={logo} alt="" />
+    <header className={style.navigation}>
+      <img onClick={scrollToTop} src={logo} alt="" />
 
       <div className={style.timer}>
         <span>Kiyv, UA </span>
         <span>{currentTime}</span>
       </div>
       <div className={style.links}>
-        <p> &gt; Contact</p>
+        <p onClick={scrollToBot}> &gt; Contact</p>
       </div>
-    </div>
+    </header>
   );
 };
 
