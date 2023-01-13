@@ -1,0 +1,12 @@
+.dropdown {
+    transition: 1s;
+}
+.dropdown_active {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+@media (min-width: 570px) {
+    .dropdown {
+        display: none;
+    }
+}

@@ -148,8 +148,9 @@
     .contacts_info {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
         .contacts_mail {
-            margin-top: 40px;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             .contacts_using {

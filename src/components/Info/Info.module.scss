@@ -47,23 +47,29 @@
             li {
                 &:first-child {
                     list-style: none;
-                    padding-left: 00px;
-                    border-left: none;
+                    margin-left: 40px;
+                    margin-right: 40px;
                     font-size: 1.8em;
                     font-weight: lighter;
                     line-height: 100%;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    line-height: 100%;
+                    padding: 10px;
                 }
                 &:last-child {
                     margin-left: 0px;
                     margin-top: 60px;
                     list-style: none;
-
                     list-style: none;
-                    padding-right: 00px;
-                    border-right: none;
+                    margin-left: 40px;
+                    margin-right: 40px;
                     font-size: 1.8em;
                     font-weight: lighter;
                     line-height: 100%;
+                    padding: 10px;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
                 }
             }
         }

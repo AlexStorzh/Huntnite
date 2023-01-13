@@ -6,7 +6,7 @@ import LandingPage from "./pages/LandingPage";
 function App() {
   let [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setLoading(false);
   }, []);
   return <div className="App">{loading ? <Loader /> : <LandingPage />}</div>;
 }

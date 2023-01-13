@@ -9,7 +9,7 @@
         color: white;
     }
     .scroller {
-        font-size: 300px;
+        font-size: 14em;
         display: flex;
         gap: 10px;
         display: inline-block;
@@ -25,6 +25,12 @@
             margin: auto;
             color: white;
         }
+        .scroller {
+            font-size: 10em;
+            display: flex;
+            gap: 10px;
+            display: inline-block;
+        }
     }
 }
 
@@ -39,7 +45,7 @@
             color: white;
         }
         .scroller {
-            font-size: 170px;
+            font-size: 6em;
             display: flex;
             gap: 10px;
             display: inline-block;

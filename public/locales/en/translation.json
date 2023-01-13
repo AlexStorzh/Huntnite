@@ -1,0 +1,46 @@
+{
+    "title" : "",
+    "navbar": {
+        "city": "Kiyv",
+        "country": "UA",
+        "contact":  "Contact"
+    },
+    "introduction": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves.",
+    "info": {
+        "title": "Info",
+        "info1": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves",
+        "info2": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves"
+    },
+    "process": {
+        "title": "Process",
+        "block1": {
+            "title": "Identify",
+            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+        },
+        "block2": {
+            "title": "Design",
+            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+        },
+        "block3": {
+            "title": "Deliver",
+            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+        }
+    },
+    "footer": {
+        "info" : {
+            "text1" : "WANNA FIND WORK",
+            "text2" : "JUST CONTACT US"
+        },
+        "contacts": {
+            "title": "CONTACTS",
+            "email": "Email",
+            "phohe": "Phone"
+        }
+    },
+        "social": {
+            "title": "Social"
+
+        }
+    }
+
+

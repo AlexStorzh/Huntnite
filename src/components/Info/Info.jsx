@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Info.module.scss";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 const textAnimation = {
   hidden: {
     x: -100,
@@ -15,6 +15,7 @@ const textAnimation = {
 };
 
 const Info = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className={style.info}>
       <motion.div
@@ -24,22 +25,14 @@ const Info = () => {
         className={style.info_body}
       >
         <motion.p custom={1} variants={textAnimation}>
-          Info
+          {t("info.title")}
         </motion.p>
         <ul>
           <motion.li custom={4} variants={textAnimation}>
-            A recruitment agency HUNTNITE is a business that is hired by
-            companies and organisations to find suitable employees. Employers
-            outsource recruitment because it takes a lot of resources and not
-            everyone has the expertise to find and recruit the best talent
-            themselves.
+            {t("info.info1")}
           </motion.li>
           <motion.li custom={5} variants={textAnimation}>
-            A recruitment agency HUNTNITE is a business that is hired by
-            companies and organisations to find suitable employees. Employers
-            outsource recruitment because it takes a lot of resources and not
-            everyone has the expertise to find and recruit the best talent
-            themselves.
+            {t("info.info2")}
           </motion.li>
         </ul>
       </motion.div>

@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./Process.module.scss";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 const textAnimation = {
   hidden: {
     y: 100,
@@ -14,6 +16,8 @@ const textAnimation = {
 };
 
 const Process = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <motion.div
       initial="hidden"
@@ -23,40 +27,28 @@ const Process = () => {
     >
       <div className={style.process_body}>
         <motion.p custom={1} variants={textAnimation}>
-          Process
+          {t("process.title")}
         </motion.p>
         <div className={style.process_cards}>
           <div>
             <p>01</p>
-            <h1>Identify</h1>
+            <h1>{t("process.block1.title")}</h1>
             <motion.span custom={3} variants={textAnimation}>
-              A recruitment agency HUNTNITE is a business that is hired by
-              companies and organisations to find suitable employees. Employers
-              outsource recruitment because it takes a lot of resources and not
-              everyone has the expertise to find and recruit the best talent
-              themselves.
+              {t("process.block1.text")}
             </motion.span>
           </div>
           <div>
             <p>02</p>
-            <h1>Design</h1>
+            <h1>{t("process.block2.title")}</h1>
             <motion.span custom={3} variants={textAnimation}>
-              A recruitment agency HUNTNITE is a business that is hired by
-              companies and organisations to find suitable employees. Employers
-              outsource recruitment because it takes a lot of resources and not
-              everyone has the expertise to find and recruit the best talent
-              themselves.
+              {t("process.block2.text")}
             </motion.span>
           </div>
           <div>
             <p>03</p>
-            <h3>Deliver</h3>
+            <h1>{t("process.block3.title")}</h1>
             <motion.span custom={3} variants={textAnimation}>
-              A recruitment agency HUNTNITE is a business that is hired by
-              companies and organisations to find suitable employees. Employers
-              outsource recruitment because it takes a lot of resources and not
-              everyone has the expertise to find and recruit the best talent
-              themselves.
+              {t("process.block3.text")}
             </motion.span>
           </div>
         </div>

@@ -36,9 +36,6 @@ $background-color: #0d0d0d;
         text-align: center;
         margin-right: 20px;
         cursor: pointer;
-        .ua {
-            border-bottom: 1px solid white;
-        }
         div {
             transition: 0.3s;
 
@@ -59,6 +56,34 @@ $background-color: #0d0d0d;
     }
     div {
         color: white;
+    }
+}
+
+//Dropdown Menu
+
+.menu {
+    z-index: 18;
+    background-color: #0d0d0d;
+    border: 1px solid white;
+    position: fixed;
+    color: white;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    .links {
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .languages {
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 767px) {
@@ -87,6 +112,12 @@ $background-color: #0d0d0d;
         transition: 1s;
         justify-content: space-around;
         .timer {
+            display: none;
+        }
+        .links {
+            display: none;
+        }
+        .languages {
             display: none;
         }
         img {
