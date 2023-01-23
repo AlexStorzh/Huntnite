@@ -10,7 +10,7 @@ The main page has been moved to `.src/pages` to facilitate further expansion of 
 
 The SASS preprocessor (https://sass-lang.com/) and modular system were used to create the styles, with most modules located in the `.src/style/` folder.
 
-Translation is realted with [i18next] (https://www.i18next.com/).
+Translation is realted with [i18next](https://www.i18next.com/).
 
 Animations based on [framer-motion] (https://www.framer.com/motion/)
 
