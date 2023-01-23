@@ -8,11 +8,11 @@ This repo houses the assets used to build the Huntnite website, available at htt
 The site was created and launched using React (npm react-create-app). The components are divided into groups and located in the `.src/componets` folder. 
 The main page has been moved to `.src/pages` to facilitate further expansion of the site.
 
-The SASS preprocessor (https://sass-lang.com/) and modular system were used to create the styles, with most modules located in the `.src/style/` folder.
+The [SASS](https://sass-lang.com/) preprocessor  and modular system were used to create the styles, with most modules located in the `.src/style/` folder.
 
 Translation is realted with [i18next](https://www.i18next.com/).
 
-Animations based on [framer-motion] (https://www.framer.com/motion/)
+Animations based on [framer-motion](https://www.framer.com/motion/)
 
 
 ### Creating a PR
