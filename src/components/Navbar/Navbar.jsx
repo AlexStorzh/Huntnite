@@ -73,7 +73,7 @@ const Navbar = () => {
             className={style.menu}
           >
             <div className={style.links}>
-              <p onClick={scrollToBotMenu}>Contact</p>
+              <p onClick={scrollToBotMenu}>{t("navbar.contact")}</p>
             </div>
             <div className={style.languages}>
               <div onClick={() => changeLanguageDropdown("ua")}>UA</div>

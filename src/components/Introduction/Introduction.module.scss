@@ -2,14 +2,29 @@
     color: white;
     padding-top: 8em;
     height: 100vh;
-    .introduction_text {
-        max-width: 300px;
-        margin: auto;
-        margin-left: 710px;
-        color: white;
+    .content {
+        padding: 0px 100px 0px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .introduction_text {
+            font-size: 3em;
+            color: white;
+        }
+        .introduction_body {
+            margin: 0;
+            max-width: 600px;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+        }
+        span {
+            border-bottom: 1px solid white;
+        }
     }
     .scroller {
-        font-size: 14em;
+        margin-top: 100px;
+        font-size: 8em;
         display: flex;
         gap: 10px;
         display: inline-block;
@@ -17,16 +32,8 @@
 }
 @media (min-width: 768px) and (max-width: 979px) {
     .introduction {
-        color: white;
-        padding-top: 8em;
-        height: 100vh;
-        .introduction_text {
-            max-width: 300px;
-            margin: auto;
-            color: white;
-        }
         .scroller {
-            font-size: 10em;
+            font-size: 8em;
             display: flex;
             gap: 10px;
             display: inline-block;
@@ -36,19 +43,20 @@
 
 @media (max-width: 767px) {
     .introduction {
-        color: white;
-        padding-top: 8em;
-        height: 100vh;
-        .introduction_text {
-            max-width: 300px;
-            margin: auto;
-            color: white;
-        }
+        padding-top: 4em;
         .scroller {
+            margin-top: 0px;
             font-size: 6em;
             display: flex;
             gap: 10px;
             display: inline-block;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .introduction {
+        .content {
+            padding: 0px 50px 0px 50px;
         }
     }
 }

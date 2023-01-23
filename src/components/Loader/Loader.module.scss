@@ -30,7 +30,6 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
     .loader_wrapper {
-        display: flex;
         align-items: center;
         .numbers {
             font-size: 140px;
@@ -43,7 +42,6 @@
 
 @media (max-width: 320px) {
     .loader_wrapper {
-        display: flex;
         align-items: center;
         .numbers {
             font-size: 100px;

@@ -1,46 +1,51 @@
 {
     "title" : "",
     "navbar": {
-        "city": "Kiyv",
+        "city": "Kyiv",
         "country": "UA",
         "contact":  "Contact"
     },
-    "introduction": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves.",
+    "introduction": {
+        "title": "Ukrainian Tech Recruitment Agency ",
+        "body": "We provide search services for specialists in IT. ",
+        "body2": "Get your first candidates within a ",
+        "week": "week."
+    },
     "info": {
         "title": "Info",
-        "info1": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves",
-        "info2": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves"
+        "info1": "We are a Ukrainian recruitment agency, providing mid-senior level IT and Business specialists to Clients all over the world. Our mission is to reduce stress in the hiring process for both employers and employees. We strive to create great relationships between our Clients and Candidates so we are able to provide the best fit for each role. Our team of experienced recruiters has a proven track record of sourcing top talent for our cliends.  ",
+        "info2": "We offer our clients full variety of recruitment solutions from job descriptions, advertising, pre-screening, interviewing to ensuring that candidate is a great fit for the role and team. Our experienced recruiters are committed to finding top talent who will be an asset to your organization."
     },
     "process": {
-        "title": "Process",
+        "title": "Our services",
         "block1": {
-            "title": "Identify",
-            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+            "title": "Talent search",
+            "text": "By working with clients to understand their business needs, our experienced team can identify the qualities, skills and abilities that are needed to fill specific roles. We also conduct a thorough background check of each candidate prior to presenting them for client selection. Hiring C-level candidates is not a problem for us. "
         },
         "block2": {
-            "title": "Design",
-            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+            "title": "Recruiting",
+            "text": "We have a team of recruiters to find and review relevant CVs, assess candidates and assist in the final selection process. Our flexibility allows us to achieve more than any recruiting department."
         },
         "block3": {
-            "title": "Deliver",
-            "text": "A recruitment agency HUNTNITE is a business that is hired by companies and organisations to find suitable employees. Employers outsource recruitment because it takes a lot of resources and not everyone has the expertise to find and recruit the best talent themselves."
+            "title": "HR Consulting",
+            "text": "We help companies improve  their HR practices, and also provide the opportunity to sign a short-term contract with our specialist to work in-house for urgent tasks."
         }
     },
     "footer": {
         "info" : {
-            "text1" : "WANNA FIND WORK",
+            "text1" : "WANNA FIND CANDIDATE",
             "text2" : "JUST CONTACT US"
         },
         "contacts": {
             "title": "CONTACTS",
             "email": "Email",
             "phohe": "Phone"
-        }
-    },
+        },
+
         "social": {
             "title": "Social"
 
         }
-    }
+    }}
 
 

@@ -24,14 +24,22 @@ const Introduction = () => {
       viewport={{ amount: 0.2 }}
       className={style.introduction}
     >
-      <motion.p
-        custom={1}
-        variants={textAnimation}
-        className={style.introduction_text}
-      >
-        {t("introduction")}
-      </motion.p>
-
+      <div className={style.content}>
+        <motion.p
+          custom={1}
+          variants={textAnimation}
+          className={style.introduction_text}
+        >
+          {t("introduction.title")}
+        </motion.p>
+        <motion.p className={style.introduction_body}>
+          {t("introduction.body")}{" "}
+          <div>
+            {t("introduction.body2")}
+            <span>{t("introduction.week")} </span>
+          </div>
+        </motion.p>
+      </div>
       <Marquee speed={150} gradient={false} className={style.scroller}>
         <div>HUNTNITE</div>
         &bull;

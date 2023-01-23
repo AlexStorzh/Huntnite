@@ -105,14 +105,9 @@
 
 @media (max-width: 767px) {
     .contacts {
-        padding: 50px;
-        background-color: #0d0d0d;
         .text {
             cursor: pointer;
             &_bottom {
-                display: inline-block;
-                position: relative;
-                color: white;
                 font-size: 40px;
                 margin-left: 0px;
             }
@@ -129,36 +124,17 @@
 @media (max-width: 480px) {
     .contacts {
         padding: 0px;
-        background-color: #0d0d0d;
         .text {
             text-align: center;
             cursor: pointer;
-            &_bottom {
-                display: inline-block;
-                position: relative;
-                color: white;
-                font-size: 40px;
-                margin-left: 0px;
-            }
-            &_upper {
-                font-size: 40px;
-            }
         }
     }
     .contacts_info {
-        flex-direction: column;
-        align-items: center;
         margin-bottom: 15px;
         .contacts_mail {
             margin-top: 20px;
-            display: flex;
-            flex-direction: column;
             .contacts_using {
-                display: inline-block;
-                position: relative;
                 padding: 0px;
-                display: flex;
-                justify-content: space-between;
                 width: 300px;
             }
         }

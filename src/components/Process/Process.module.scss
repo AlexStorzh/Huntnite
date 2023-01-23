@@ -32,34 +32,9 @@
 }
 @media (max-width: 767px) {
     .process {
-        background-color: white;
-        padding: 40px;
         &_body {
-            p {
-                font-size: 3.2em;
-            }
             .process_cards {
-                border-top: 1px solid #1c1c1c;
-                border-bottom: 1px solid #1c1c1c;
-                display: grid;
                 grid-template-columns: 1fr;
-                width: 100%;
-                gap: 1px;
-                div {
-                    background-color: white;
-                    margin: 10px 0px 10px 0px;
-                    padding: 10px;
-                    &:last-child {
-                        border-left: 1px solid #1c1c1c;
-                    }
-                    &:first-child {
-                        border-right: 1px solid #1c1c1c;
-                    }
-                    p {
-                        margin: 0;
-                        font-weight: 400;
-                    }
-                }
             }
         }
     }

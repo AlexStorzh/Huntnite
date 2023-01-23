@@ -6,70 +6,72 @@
             font-size: 3.2em;
             font-weight: 650;
         }
+        ul {
+            padding: 0;
+        }
         li {
+            max-width: 1000px;
+            list-style: none;
+            font-size: 2.8em;
+
+            font-weight: 400;
             &:first-child {
-                max-width: 1000px;
-                list-style: none;
                 padding-left: 10px;
                 border-left: 2px solid black;
-                font-size: 3.2em;
-                font-weight: lighter;
-                line-height: 85%;
             }
             &:last-child {
-                margin-left: 200px;
+                margin-left: 455px;
                 margin-top: 60px;
-                list-style: none;
-                max-width: 1000px;
-                list-style: none;
-                padding-right: 10px;
+
                 border-right: 2px solid black;
-                font-size: 3.2em;
-                font-weight: lighter;
-                line-height: 85%;
             }
         }
     }
 }
-@media (max-width: 767px) {
+@media (min-width: 1560px) {
     .info {
-        background-color: white;
-        padding: 0px;
-        text-align: center;
-        &_body {
-            p {
-                font-size: 3.2em;
-                font-weight: 650;
+        li {
+            max-width: fit-content;
+            &:last-child {
+                margin-left: 20px;
             }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .info {
+        p {
+            text-align: center;
+        }
+
+        li {
+            &:last-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .info {
+        padding: 0px;
+        &_body {
             ul {
                 padding: 0;
             }
             li {
-                &:first-child {
-                    list-style: none;
-                    margin-left: 40px;
-                    margin-right: 40px;
-                    font-size: 1.8em;
-                    font-weight: lighter;
-                    line-height: 100%;
-                    border-left: 1px solid black;
-                    border-right: 1px solid black;
-                    line-height: 100%;
-                    padding: 10px;
-                }
+                padding: 10px;
+                font-size: 1.4em;
+                font-weight: 500;
+                line-height: 100%;
+                border-left: 2px solid black;
+                margin-left: 20px;
+                margin-right: 20px;
+
                 &:last-child {
-                    margin-left: 0px;
-                    margin-top: 60px;
-                    list-style: none;
-                    list-style: none;
-                    margin-left: 40px;
-                    margin-right: 40px;
-                    font-size: 1.8em;
-                    font-weight: lighter;
-                    line-height: 100%;
-                    padding: 10px;
-                    border-left: 1px solid black;
-                    border-right: 1px solid black;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    border-left: none;
                 }
             }
         }
