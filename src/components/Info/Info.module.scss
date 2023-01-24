@@ -10,20 +10,18 @@
             padding: 0;
         }
         li {
-            max-width: 1000px;
+            max-width: fit-content;
             list-style: none;
             font-size: 2.8em;
-
             font-weight: 400;
             &:first-child {
                 padding-left: 10px;
                 border-left: 2px solid black;
             }
             &:last-child {
-                margin-left: 455px;
                 margin-top: 60px;
-
                 border-right: 2px solid black;
+                margin-left: 20px;
             }
         }
     }
@@ -31,7 +29,6 @@
 @media (min-width: 1560px) {
     .info {
         li {
-            max-width: fit-content;
             &:last-child {
                 margin-left: 20px;
             }
