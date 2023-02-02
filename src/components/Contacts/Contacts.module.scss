@@ -59,6 +59,10 @@
             margin-top: 40px;
             display: flex;
             flex-direction: column;
+            a {
+                text-decoration: none;
+                color: grey;
+            }
             .contacts_using {
                 display: inline-block;
                 position: relative;
@@ -67,6 +71,7 @@
                 justify-content: space-between;
                 width: 400px;
                 cursor: pointer;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -84,6 +89,9 @@
                     transform-origin: bottom left;
                 }
                 &:hover {
+                    a {
+                        color: white;
+                    }
                     .inactiv {
                         color: white;
                     }
@@ -91,6 +99,9 @@
                 .inactiv {
                     color: grey;
                     transition: 0.3s;
+                    &_name {
+                        color: white;
+                    }
                 }
             }
         }

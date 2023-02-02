@@ -2,29 +2,43 @@ import React, { useState, useEffect } from "react";
 import style from "./Navbar.module.scss";
 import logo from "../../images/image_2023-01-06_16-43-30.svg";
 import DropdownMenu from "./DropdownMenu";
+import { TIME_API } from "../../util/API";
+import { getApiResource } from "../../api/getApi";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
+  let [isVisible, setIsVisible] = useState(false);
+  let [time, setTime] = useState();
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      getResource(TIME_API);
+    }, 1050);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  const getResource = async (url) => {
+    const res = await getApiResource(url);
+    setTime(res.datetime.slice(11));
+  };
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
+
   const changeLanguageDropdown = (language) => {
     i18n.changeLanguage(language);
     setIsVisible(!isVisible);
   };
-  let [isVisible, setIsVisible] = useState(false);
-  let [data, setData] = useState(new Date());
-  let currentTime = data.toLocaleTimeString();
-  useEffect(() => {
-    setInterval(() => setData(new Date()), 1000);
-  }, []);
+
   let scrollToBot = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: "smooth",
     });
   };
+
   let scrollToBotMenu = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -32,6 +46,7 @@ const Navbar = () => {
     });
     setTimeout(() => setIsVisible(!isVisible), 700);
   };
+
   let scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -47,7 +62,7 @@ const Navbar = () => {
           <span>
             {t("navbar.city")}, {t("navbar.country")}{" "}
           </span>
-          <span>{currentTime}</span>
+          <span>{time}</span>
         </div>
         <DropdownMenu
           scrollToBot={scrollToBot}

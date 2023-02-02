@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={style.footer}>
       <div>@2023 - Ukraine</div>
       <div>HUNTNITE&reg;</div>
-      <div>All right reserved</div>
+      <div>All rights reserved</div>
     </footer>
   );
 };

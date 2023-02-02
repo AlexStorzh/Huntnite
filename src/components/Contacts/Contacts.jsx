@@ -23,14 +23,13 @@ const Contacts = () => {
         </div>
         <div className={style.contacts_mail}>
           <p>{t("footer.social.title")}</p>
-          <div className={style.contacts_using}>
-            <div>Instagram</div>
-            <div className={style.inactiv}>@huntnite</div>
-          </div>
-          <div className={style.contacts_using}>
-            <div>Telegram</div>
-            <div className={style.inactiv}>@huntnite</div>
-          </div>
+
+          <a href="https://www.linkedin.com/company/huntnite/">
+            <div className={style.contacts_using}>
+              <div className={style.inactiv_name}>LinkedIn</div>
+              <div className={style.inactiv}> Huntnite </div>
+            </div>
+          </a>
         </div>
         <div className={style.contacts_social}></div>
       </div>
