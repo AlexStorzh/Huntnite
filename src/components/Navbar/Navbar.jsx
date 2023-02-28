@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import style from "./Navbar.module.scss";
 import logo from "../../images/image_2023-01-06_16-43-30.svg";
 import DropdownMenu from "./DropdownMenu";
-import { TIME_API } from "../../util/API";
-import { getApiResource } from "../../api/getApi";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
@@ -12,17 +11,22 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    let interval = setInterval(() => {
-      getResource(TIME_API);
-    }, 1050);
-    return () => {
-      clearInterval(interval);
-    };
+    function showTimeInKyiv() {
+      const kyivTimezoneOffset = 3;
+      const now = new Date();
+      const utcTimestamp = now.getTime() + now.getTimezoneOffset() * 60000;
+      const kyivTimestamp = utcTimestamp + kyivTimezoneOffset * 60 * 60 * 1000;
+      const kyivTime = new Date(kyivTimestamp);
+      const hours = kyivTime.getHours().toString().padStart(2, "0");
+      const minutes = kyivTime.getMinutes().toString().padStart(2, "0");
+      const seconds = kyivTime.getSeconds().toString().padStart(2, "0");
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      setTime(timeString);
+      setTimeout(showTimeInKyiv, 1000);
+    }
+    showTimeInKyiv();
   }, []);
-  const getResource = async (url) => {
-    const res = await getApiResource(url);
-    setTime(res.datetime.slice(11));
-  };
+
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
