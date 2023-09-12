@@ -1,9 +1,13 @@
 .contacts {
     padding: 50px;
     background-color: #0d0d0d;
+    a {
+        text-decoration: none;
+        color: white;
+    }
     .text {
-        cursor: pointer;
         &_upper {
+            cursor: default;
             display: inline-block;
             position: relative;
             margin-top: 40px;
@@ -28,6 +32,7 @@
             }
         }
         &_bottom {
+            cursor: pointer;
             display: inline-block;
             position: relative;
             color: white;

@@ -1,51 +1,49 @@
 {
-    "title" : "",
-    "navbar": {
-        "city": "Kyiv",
-        "country": "UA",
-        "contact":  "Contact"
-    },
-    "introduction": {
-        "title": "Ukrainian Tech Recruitment Agency ",
-        "body": "We provide search services for specialists in IT. ",
-        "body2": "Get your first candidates within a ",
-        "week": "week."
-    },
-    "info": {
-        "title": "Info",
-        "info1": "We are a Ukrainian recruitment agency, providing mid-senior level IT and Business specialists to Clients all over the world. Our mission is to reduce stress in the hiring process for both employers and employees. We strive to create great relationships between our Clients and Candidates so we are able to provide the best fit for each role. Our team of experienced recruiters has a proven track record of sourcing top talent for our cliends.  ",
-        "info2": "We offer our clients full variety of recruitment solutions from job descriptions, advertising, pre-screening, interviewing to ensuring that candidate is a great fit for the role and team. Our experienced recruiters are committed to finding top talent who will be an asset to your organization."
-    },
-    "process": {
-        "title": "Our services",
-        "block1": {
-            "title": "Talent search",
-            "text": "By working with clients to understand their business needs, our experienced team can identify the qualities, skills and abilities that are needed to fill specific roles. We also conduct a thorough background check of each candidate prior to presenting them for client selection. Hiring C-level candidates is not a problem for us. "
-        },
-        "block2": {
-            "title": "Recruiting",
-            "text": "We have a team of recruiters to find and review relevant CVs, assess candidates and assist in the final selection process. Our flexibility allows us to achieve more than any recruiting department."
-        },
-        "block3": {
-            "title": "HR Consulting",
-            "text": "We help companies improve  their HR practices, and also provide the opportunity to sign a short-term contract with our specialist to work in-house for urgent tasks."
-        }
-    },
-    "footer": {
-        "info" : {
-            "text1" : "WANNA FIND CANDIDATE",
-            "text2" : "JUST CONTACT US"
-        },
-        "contacts": {
-            "title": "CONTACTS",
-            "email": "Email",
-            "phohe": "Phone"
-        },
+	"title": "",
+	"navbar": {
+		"city": "Kyiv",
+		"country": "UA",
+		"contact": "Contact"
+	},
+	"introduction": {
+		"title": "Ukrainian Digital Agency ",
+		"body": "We provide recruitment and lead generation services in IT.",
+		"body2": "Get your first candidates or leads within a ",
+		"week": "week."
+	},
+	"info": {
+		"title": "Info",
+		"info1": "We are a Ukrainian digital agency, providing mid-senior level IT specialists and leads to Clients all over the world. Our mission is to simplify the search for new clients and employees for businesses. To achieve this, we have high-caliber teams specializing in lead generation and recruiting with experience in European, CIS, North American, and South American markets.  ",
+		"info2": "We provide our clients with a comprehensive range of recruitment solutions, encompassing everything from crafting job descriptions and advertising to pre-screening, interviewing, and ensuring that the selected candidate aligns seamlessly with both the role and the team. Additionally, we excel in lead generation solutions, which include developing Ideal Customer Profiles (ICP), fine-tuning lead search processes, prospecting, lead generation, and offering assistance in optimizing the sales process. Our unwavering dedication is to unearth top-tier talent and clients who will ignite your company's growth. "
+	},
+	"process": {
+		"title": "Our services",
+		"block1": {
+			"title": "Lead Generation",
+			"text": "Our lead generation service is designed to supercharge your business by connecting you with high-potential prospects. We employ cutting-edge strategies to identify and engage potential customers, delivering a steady stream of qualified leads to fuel your sales and marketing efforts. Elevate your business to new heights with our expertly crafted lead generation solutions."
+		},
+		"block2": {
+			"title": "Recruiting",
+			"text": "We have a team of recruiters to find and review relevant CVs, assess candidates and assist in the final selection process. Our flexibility allows us to achieve more than any recruiting department."
+		},
+		"block3": {
+			"title": "HR Consulting",
+			"text": "We help companies improve  their HR practices, and also provide the opportunity to sign a short-term contract with our specialist to work in-house for urgent tasks."
+		}
+	},
+	"footer": {
+		"info": {
+			"text1": "WANNA USE OUR SERVICE",
+			"text2": "JUST CONTACT US"
+		},
+		"contacts": {
+			"title": "CONTACTS",
+			"email": "Email",
+			"phone": "Phone"
+		},
 
-        "social": {
-            "title": "Social"
-
-        }
-    }}
-
-
+		"social": {
+			"title": "Social"
+		}
+	}
+}
